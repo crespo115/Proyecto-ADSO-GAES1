@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
-<title>Bootstrap Simple Registration Form</title>
+<title>Registro de usuario A.C.S.S</title>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -12,28 +12,20 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 <style>
 body {
-	color: #fff;
+	color: black;
 	background: #ffffff;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Arial', sans-serif;
 }
-.form-control {
-	height: 40px;
-	box-shadow: none;
-	color: #969fa4;
-}
-.form-control:focus {
-	border-color: #4086a1;
-}
-.form-control, .btn {        
-	border-radius: 3px;
-}
+
+
+
 .signup-form {
 	width: 450px;
 	margin: 0 auto;
-	padding: 30px 0;
-    font-size: 15px;}
+	padding: 25px 0;
+    font-size: 13.5px;}
 .signup-form h2 {
-	color: #636363;
+	color:  #6D7C8B;
 	margin: 0 0 15px;
 	position: relative;
 	text-align: center;}
@@ -59,7 +51,7 @@ body {
 	color: #999;
 	border-radius: 3px;
 	margin-bottom: 15px;
-	background: #f2f3f7;
+	background:  #DFE4E5 ;
 	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
 	padding: 30px;
 }
@@ -67,7 +59,7 @@ body {
 	margin-bottom: 20px;
 }
 .signup-form input[type="checkbox"] {
-	margin-top: 3px;
+	margin-top: 4px;
 }
 .signup-form .btn {        
 	font-size: 16px;
@@ -82,49 +74,74 @@ body {
 	padding-left: 10px;
 }    	
 .signup-form a {
-	color: #fff;
+	color: #279cb3;
+
 	text-decoration: underline;
 }
 .signup-form a:hover {
 	text-decoration: none;
 }
 .signup-form form a {
-	color: #5c7cb8;
+	color: #23434F;
 	text-decoration: none;
 }	
 .signup-form form a:hover {
 	text-decoration: underline;
 }  
+
+
 </style>
 </head>
 <body>
 <div class="signup-form">
-    <form action="/examples/actions/confirmation.php" method="post">
+    <form>
 		<h2>Registro</h2>
 		
         <div class="form-group">
 			<div class="row">
-				<div class="col"><input type="text" class="form-control" name="Nombre" placeholder="Nombre" required="required"></div>
-				<div class="col"><input type="text" class="form-control" name="Apellido" placeholder="Apellido" required="required"></div>
+				<div class="col"><input type="text" class="form-control" name="Nombre" placeholder="Nombres" required="required"></div>
+				<div class="col"><input type="text" class="form-control" name="Apellido" placeholder="Apellidos" required="required"></div>
 			</div>        	
         </div>
+		
+		<div>
+			<input type="number" class="form-control" name="identificación" placeholder="Número de documento" required="required">
+		</div>
+		<br>
+		<div>
+			<input type="number" class="form-control" name="celular" placeholder="Télefono" required="required">
+		</div>
+		<br>
         <div class="form-group">
-        	<input type="email" class="form-control" name="email" placeholder="Email" required="required">
+        	<input type="email" class="form-control" name="email" placeholder="Correo electrónico" required="required">
         </div>
+		<div>
+			<input type="text" class="form-control" name="usuario" placeholder="Nombre de usuario" required="required">
+		</div>
+
+		<br>
 		<div class="form-group">
             <input type="password" class="form-control" name="Contraseña" placeholder="Contraseña" required="required">
         </div>
+
 		<div class="form-group">
             <input type="password" class="form-control" name="Confirmar Contraseña" placeholder="Confirmar Contraseña" required="required">
-        </div>        
+        </div>   
+
         <div class="form-group">
-			<label class="form-check-label"><input type="checkbox" required="required"> Acepto los <a href="#">Terminos </a>  <a href="#"> y politíca de privacida </a></label>
+			<label>
+			<input type="checkbox" required="required"> Acepto los <a href="#">Términos </a>  <a href="#"> y política de privacidad </a>
+		</label>
 		</div>
+		
 		<div class="form-group">
-            <button type="submit" class="btn btn-success btn-lg btn-block">Registrar</button>
+
+	<button type="submit" class="btn btn-dark btn-lg btn-block">Registrar usuario</button>
         </div>
+
+		
     </form>
-	<div class="text-center">¿Ya tienes una cuenta? <a href="#">Iniciar secio</a></div>
+	<div class="text-right">¿Ya tienes cuenta? <a href="#">Iniciar sesión</a></div>
 </div>
 </body>
 </html>
